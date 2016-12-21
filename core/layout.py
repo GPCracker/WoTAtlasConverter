@@ -87,4 +87,4 @@ class LayoutTree(ElementTree):
 			y=int(subtexture.find(u'y').text.strip()),
 			width=int(subtexture.find(u'width').text.strip()),
 			height=int(subtexture.find(u'height').text.strip())
-		) for subtexture in self.findall(u'SubTexture')]
+		) for subtexture in self.iterfind(u'SubTexture')]
